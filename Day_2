@@ -1,0 +1,22 @@
+package week1.day2;
+
+public class Day_2_datatype_Assesment {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int numberOfCars = 5;
+		
+		char words ='R';
+		boolean available = true;
+		String model="Koenigsegg Gemera";
+		
+		System.out.println(numberOfCars);
+		System.out.println(words);
+		System.out.println(available);
+		System.out.println(model);
+		
+
+	}
+
+}
