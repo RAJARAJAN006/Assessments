@@ -1,0 +1,28 @@
+package week1.day4;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Assignment_Day_4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//STEP_01:Open browser
+		ChromeDriver driver= new ChromeDriver();
+		
+		//Step-2:Loading the url	
+		driver.get("https://login.salesforce.com/");
+		
+		//To give usename and password  
+		driver.findElement(By.id("username")).sendKeys("hari.radhakrishnan@qeagle.com");
+				
+				 
+		driver.findElement(By.id("password")).sendKeys("Leaf@1234");
+		
+		//To click 
+		driver.findElement(By.id("Login")).click();
+
+	}
+
+}
