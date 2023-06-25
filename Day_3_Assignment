@@ -1,0 +1,25 @@
+package week1.day3;
+
+public class Main_Assignment_Day_3 {
+
+	public static void main(String[] args) {
+		
+		
+String name ="Amazon Development Centre,chennai";
+		
+		//CHanging all the words to lower case first 
+		name=name.toLowerCase();
+	
+		String[] split = name.split(" ");
+		
+		// To Reverse The WORDS BACKWARD TO FORWARD CAN USE SPLIT METHOD
+for (int i=split.length-1; i>=0; i--) {
+	
+	System.out.println(split[i]);
+	
+}
+		
+
+	}
+
+}
