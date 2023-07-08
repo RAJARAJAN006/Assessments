@@ -1,0 +1,71 @@
+package org.college;
+
+public class College {
+	
+	
+	public void collegeName() {
+		
+		System.out.println("NYU");
+		
+		
+	}
+	
+	
+public void collegeCode() {
+		
+		System.out.println("2562");
+		
+		
+	}
+
+
+public void collegeRank() {
+	
+	System.out.println("#25");
+	
+	
+}
+	
+
+public static void main(String[] args) {
+	
+	College co = new College();
+	
+	co.collegeName();
+	co.collegeCode();
+	co.collegeRank();
+}
+	
+
+}
+
+
+
+package org.department;
+
+import org.college.College;
+
+public class Department extends College  {
+	
+		
+public void deptName() {
+		
+		System.out.println("Mechanical Engineering");
+		
+		
+	}
+
+public static void main(String[] args) {
+	
+	Department de = new Department();
+	de.collegeName();
+	de.collegeCode();
+	de.collegeRank();
+	de.deptName();
+}
+}
+
+
+
+
+
