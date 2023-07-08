@@ -1,0 +1,81 @@
+package Week2.day1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Assignment_2_Locator {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Launch the chromebrowser
+				ChromeDriver driver= new ChromeDriver();
+				
+				//Load the URL https://en-gb.facebook.com/
+				driver.get("http://leaftaps.com/opentaps/control/login");
+				
+				
+				//Add implicit wait
+				driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(30));
+				
+		
+	        	//Maximise the window
+		        driver.manage().window().maximize();
+				
+			
+				driver.findElement(By.id("username")).sendKeys("demosalesmanager");
+				driver.findElement(By.id("password")).sendKeys("crmsfa");
+				
+				
+				driver.findElement(By.className("decorativeSubmit")).click();
+				
+				
+				driver.findElement(By.linkText("CRM/SFA")).click();
+				
+				driver.findElement(By.linkText("Leads")).click();
+				
+				driver.findElement(By.linkText("Create Lead")).click();
+				
+				driver.findElement(By.id("createLeadForm_companyName")).sendKeys("sciera");
+				
+				driver.findElement(By.id("createLeadForm_firstName")).sendKeys("Raj");
+				
+				driver.findElement(By.id("createLeadForm_lastName")).sendKeys("Mohanraj");
+				
+				driver.findElement(By.id("createLeadForm_departmentName")).sendKeys("QA");
+				
+				driver.findElement(By.name("description")).sendKeys("Automation");
+										
+				driver.findElement(By.name("primaryEmail")).sendKeys("worldrec@world.com");
+				
+				driver.findElement(By.className("smallSubmit")).click();
+				
+			
+				
+				String title = driver.getTitle();
+				System.out.print(title);
+				
+			
+				driver.findElement(By.linkText("Duplicate Lead")).click();
+				
+				//Get field text using  //Return type	(Ctrl+2)					
+				String text = driver.findElement(By.id("createLeadForm_firstName")).getText();
+				System.out.println(text);
+				
+				
+			
+				
+				WebElement com = driver.findElement(By.id("createLeadForm_companyName"));	
+				com.clear();
+				com.sendKeys("Nasa");
+				
+				
+				//create lead
+				driver.findElement(By.className("smallSubmit")).click();
+				
+				
+				
+	}
+
+}
