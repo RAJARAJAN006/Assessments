@@ -1,0 +1,18 @@
+package Week2.day2;
+
+public class Axisbank extends bankinfo {
+	
+	
+	public void deposit() {
+		
+		System.out.println("override");
+	}
+
+	public static void main(String[] args) {
+		
+		Axisbank bank = new Axisbank();
+		
+		bank.savings();
+		bank.fixed();
+	}
+}
