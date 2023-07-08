@@ -1,0 +1,22 @@
+package Week2.day4_abstarction_collection;
+
+public class Automation extends Multiplelanguage implements Language,TesTtool  {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void selenium () {
+		
+		
+	}
+	
+	public void java() {
+		
+		
+	}
+	
+	public void ruby() {
+}
+}
